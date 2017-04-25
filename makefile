@@ -4,5 +4,5 @@ CXXFLAGS =-g -std=c++14
 LDLIBS = -lantlr4-runtime
 OUTPUT = -o isns
 
-isns: src/ISNS.o
+isns:
 	$(CXX) $(CXXFLAGS) $(SOURCES) $(OUTPUT) $(LDLIBS)
