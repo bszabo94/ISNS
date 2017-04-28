@@ -3,9 +3,8 @@
 #include <antlr4-runtime.h>
 #include <ostream>
 
-class SysFunctions{
-public:
-    static antlrcpp::Any print ( std::string s );
-    static antlrcpp::Any println ( std::string s ) ;
-    static antlrcpp::Any read();
+namespace SysFunctions{
+    antlrcpp::Any print ( std::string s );
+    antlrcpp::Any println ( std::string s ) ;
+    antlrcpp::Any read();
 };
