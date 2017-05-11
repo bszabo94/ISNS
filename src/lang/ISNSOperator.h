@@ -5,19 +5,19 @@
 #include "ISNSRuntimeException.h"
 #include <math.h>
 
-class ISNSOperator{
+namespace ISNSOperator{
 
-public:
-    static bool isIntString ( std::string s );
-    static bool isDoubleString ( std::string s );
+    bool isIntString ( std::string s );
+    bool isDoubleString ( std::string s );
 
-    static antlrcpp::Any convertToType ( antlrcpp::Any val, Type type );
-    static antlrcpp::Any operate ( antlrcpp::Any val1, antlrcpp::Any val2, std::string op );
-    static antlrcpp::Any uOperate ( antlrcpp::Any val, std::string op );
+    antlrcpp::Any convertToType ( antlrcpp::Any val, Type type );
+    antlrcpp::Any operate ( antlrcpp::Any val1, antlrcpp::Any val2, std::string 
+op );
+    antlrcpp::Any uOperate ( antlrcpp::Any val, std::string op );
 
-    static bool cOperate ( antlrcpp::Any val1, antlrcpp::Any val2, std::string op );
-    static Type getType ( antlrcpp::Any v );
-    static bool getBool ( antlrcpp::Any v );
-    static void trimStr ( std::string &s );
+    bool cOperate ( antlrcpp::Any val1, antlrcpp::Any val2, std::string op );
+    Type getType ( antlrcpp::Any v );
+    bool getBool ( antlrcpp::Any v );
+    void trimStr ( std::string &s );
 	
 };
