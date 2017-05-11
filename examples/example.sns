@@ -1,0 +1,14 @@
+/*** Example input for ISNS ***/
+
+import "examples/fibonacci.sns", "examples/factorial.sns" ;
+
+int main(){
+
+	println("Hello World!") ;
+
+	print("8! = "); println( fact(8) ) ;
+	println("Fibonacci numbers up to 20: "); printfib(20) ;
+	
+
+	return 0;
+}

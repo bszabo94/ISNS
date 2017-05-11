@@ -1,0 +1,28 @@
+/*** Prints all fibonacci numbers up to the given 'n' limit ***/
+void printfib(int n){
+	if( n == 1 ){
+		println("[1]") ;
+		return ;
+	}
+
+
+	if( n == 2 ){
+		println("[1, 2]") ;
+		return ;
+	}
+
+
+	int fib[] ;
+	fib[1] = 1 ;
+	fib[2] = 2 ;
+
+	print("[1, 2") ;
+	for(int i = 3; i < n; i = i + 1){
+		fib[i] = (fib[i - 1] + fib[i - 2]) ;
+		print(", ") ;
+		print(fib[i]) ;
+	}
+	println("]") ;
+
+	return ;
+}

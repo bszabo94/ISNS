@@ -1,0 +1,20 @@
+/*** Return the length (number of characters) of the given 's' string ***/
+int len( str s ){
+	if ( s == "" ){
+		return 0 ;
+	}
+	str e;
+	int len ;
+
+	/*while (s[len] != ""){
+		len = len + 1 ;
+	}*/
+	
+	if (s[12] != e ){
+		print("yaay"); print(s[12]);
+	} else {
+		print("naay");
+	}
+
+	return len ;
+}
